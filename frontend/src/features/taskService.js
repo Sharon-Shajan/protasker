@@ -2,8 +2,8 @@ import axios from 'axios';
 // Comment out localhost
 // const API_URL = 'http://localhost:5000/api/tasks/';
 
-// Add your new Render URL (Make sure to keep the /api/tasks/ part!)
-const API_URL = 'https://YOUR-APP-NAME.onrender.com/api/tasks/';
+// Add your new Render URL (Make sure to keep the /api/tasks/ pa
+const API_URL = 'https://protasker.onrender.com/api/tasks/';
 const getTasks = async () => {
   const response = await axios.get(API_URL);
   return response.data;

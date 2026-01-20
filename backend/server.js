@@ -9,8 +9,8 @@ connectDB();
 const app = express();
 
 app.use(cors({
-    origin: ["https://your-vercel-app.vercel.app"],
-    credentials: true
+  origin: ["https://protasker.vercel.app", "http://localhost:5173"], // Allow Vercel AND Localhost
+  credentials: true
 }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
