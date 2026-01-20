@@ -25,7 +25,8 @@ function Dashboard({ user, onLogout }) {
     const newTask = await taskService.createTask({ text });
     setTasks([...tasks, newTask]);
     setText('');
-  };
+  }
+  ;
 
   const onDelete = async (id) => {
     await taskService.deleteTask(id);
